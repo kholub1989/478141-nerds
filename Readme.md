@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Krisztian Holub](https://up.htmlacademy.ru/htmlcss/19/user/478141).
-* Наставник: `Наталья Майстренко`.
+* Наставник: [Наталья Майстренко](https://htmlacademy.ru/profile/natalie).
 
 ---
 
