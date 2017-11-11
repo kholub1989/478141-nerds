@@ -59,15 +59,15 @@
           <legend>Сетка:</legend>
           <ul>
             <li class="filter-option">
-              <input type="radio" id="filter-adaptive" name="product-grid" checked>
+              <input type="radio" id="filter-adaptive" name="product-grid" value="adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li class="filter-option">
-              <input type="radio" id="filter-fixed" name="product-grid">
+              <input type="radio" id="filter-fixed" name="product-grid" value="fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden" type="radio" id="filter-rubber" name="product-grid">
+              <input class="visually-hidden" type="radio" id="filter-rubber" name="product-grid" value="rubber">
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
@@ -254,15 +254,15 @@
   <section class="modal modal-write-us">
     <h2>Напишите нам</h2>
     <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="user-name">
         <label for="modal-name">Ваше имя</label>
         <input class="name-of-user" type="text" id="modal-name" name="name" placeholder="Представьтесь, пожалуйста">
       </p>
-      <p>
+      <p class="user-email">
         <label for="modal-email">Ваш e-mail</label>
         <input class="email-of-user" type="text" id="modal-email" name="email" placeholder="Для отправки ответа">
       </p>
-      <p>
+      <p class="user-text-massege">
         <label for="modal-letter">Текст письма:</label>
         <textarea id="modal-letter" name="user-message" placeholder="В свободной форме"></textarea>
       </p>
