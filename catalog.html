@@ -39,19 +39,25 @@
     <section class="filter">
       <h2 class="visually-hidden">Фильтры стоимости и услуг</h2>
       <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+
         <fieldset class="range-filter">
           <legend>Стоимость:</legend>
-          <div class="range-controls">
-            <label for="price-range"></label>
-            <input type="range" id="price-range" name="range" min="0" max="15000" step="100">
-          </div>
-          <div class="price-controls">
-            <label class="left" for="min-price">
-              от <input name="min-pice" type="text" value="0" id="min-price">
-            </label>
-            <label class="right" for="max-price">
-              до <input name="max-pice" type="text" value="15000" id="max-price">
-            </label>
+          <div class="filter-block filter-range">
+            <div class="price-controls">
+              <label class="min-price">
+      ОТ <input name="min-price" type="text" value="0">
+  </label>
+              <label class="max-price">
+      ДО <input name="max-price" type="text" value="15000">
+    </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+            </div>
           </div>
         </fieldset>
 
