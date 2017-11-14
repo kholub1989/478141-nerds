@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -9,6 +9,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+/* === HEADER STARTS === */
+.main-header {
+  background-color: #eeeeee;
 }
 
 .main-navigation {
@@ -31,10 +36,17 @@ a {
   color: #fb565a;
 }
 
-.main-nav-item a:focus,
-.user-navigation a:focus {
+.main-nav-item a:active,
+.user-navigation a:active {
   color: #000000;
   opacity: 0.3;
+}
+
+/* === HEADER ENDS === */
+
+/* === CONTENT STARTS === */
+.slider {
+  background-color: #eeeeee;
 }
 
 .slider-title {
@@ -43,20 +55,35 @@ a {
 }
 
 .slider-text {
-  font-size: 16px;
-  line-height: 24px;
   color: #283136;
 }
 
 .slider-first .button,
 .slider-second .button,
 .slider-third .button {
+  font-size: 16px;
+  line-height: 18px;
+  font: inherit;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #fb565a;
   border: none;
+}
+.slider-first .button:focus,
+.slider-second .button:focus,
+.slider-third .button:focus {
+  background-color: #e74246;
+}
+.slider-first .button:active,
+.slider-second .button:active,
+.slider-third .button:active {
+  background-color: #d7373b;
+  color: rgba(255,255,255,0.3);
+}
+
+.services-list {
+  list-style: none;
 }
 
 .services-title {
@@ -65,4 +92,170 @@ a {
   font-weight: bold;
 }
 
-.services-title p {}
+.services-title p {
+  color: #283136;
+}
+
+.service-item .button {
+  font-size: 16px;
+  line-height: 18px;
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.service-item:nth-child(1) .button {
+  background-color: #fb565a;
+
+}
+.service-item:nth-child(2) .button {
+  background-color: #00ca74;
+}
+
+.service-item:nth-child(3) .button {
+  background-color: #efc84a;
+}
+.service-item:nth-child(1) .button:focus {
+  background-color: #e74246;
+}
+.service-item:nth-child(2) .button:focus {
+  background-color: #00bc6c;
+}
+.service-item:nth-child(3) .button:focus {
+  background-color: #eab534;
+}
+
+.service-item:nth-child(1) .button:active {
+  background-color: #d7373b;
+  color: rgba(255,255,255,0.3);
+}
+.service-item:nth-child(2) .button:active {
+  background-color: #00bc6c;
+  color: rgba(255,255,255,0.3);
+}
+.service-item:nth-child(3) .button:active {
+  background-color: #e5a722;
+  color: rgba(255,255,255,0.3);
+}
+
+.about-us-title {
+  font-size: 45px;
+  line-height: 45px;
+}
+.about-us-text {
+  color: #283136;
+}
+
+.about-us-list-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-list ul {
+  color: #283136;
+  list-style: none;
+}
+
+.about-list--right p {
+  font-weight: bold;
+}
+
+.portfolio ul {
+  list-style: none;
+}
+
+.portfolio img {
+  opacity: 0.2;
+}
+
+.portfolio img:hover {
+  opacity: 1;
+}
+
+.portfolio img:active {
+  opacity: 0.1;
+}
+
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contacts-title p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts .button {
+  font-size: 16px;
+  line-height: 18px;
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+
+/* === CONTENT ENDS === */
+
+/* === FOOTER STARTS === */
+
+.main-social ul {
+  list-style: none;
+}
+
+.social-button a:hover {
+  color: #e74246;
+}
+
+.social-button a:active {
+  color: #d7373b;
+
+}
+
+.social-text h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.social-text p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+/* === FOOTER ENDS === */
+
+/* === MODALS START === */
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.user-name,
+.user-email,
+.user-text-massege {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.modal-post {
+  font-size: 16px;
+  line-height: 18px;
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+
+/* === MODALS ENDS === */
