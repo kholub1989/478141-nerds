@@ -12,6 +12,7 @@ a {
 }
 
 /* === HEADER STARTS === */
+
 .main-header {
   background-color: #eeeeee;
 }
@@ -230,6 +231,7 @@ a {
   line-height: 22px;
   color: #444444;
 }
+
 /* === FOOTER ENDS === */
 
 /* === MODALS START === */
@@ -257,5 +259,35 @@ a {
   background-color: #fb565a;
   border: none;
 }
+
+.name-form input[type="text"],
+.name-form input[type="email"],
+.name-form textarea {
+  background-color: #fff;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  color: black;
+}
+
+.name-form input[type="text"]:hover,
+.name-form input[type="email"]:hover,
+.name-form textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.name-form input[type="text"]:focus,
+.name-form input[type="email"]:focus,
+.name-form textarea:focus {
+  border-color: #000000;
+  color: #444444;
+}
+
+/*.name-form input[type="text"]:invalid,
+.name-form input[type="email"]:invalid,
+.name-form textarea:invalid {
+  border-color: #e74246;
+  color: #e74246;
+}*/
+
 
 /* === MODALS ENDS === */
