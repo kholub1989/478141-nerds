@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
-<body>
+<body class="inner-page">
 
   <header class="main-header">
     <nav class="main-navigation">
@@ -19,7 +22,7 @@
         <li class="main-nav-clients">
           <a href="#">Клиенты</a>
         </li>
-        <li class="main-nav-store">
+        <li class="main-nav-store main-nav-store-current">
           <a href="catalog.html">Магазин</a>
         </li>
         <li class="main-nav-contacts">
@@ -219,16 +222,16 @@
 
         <div class="pagination">
           <ul>
-            <li>
+            <li class="pagination-item pagination-item-current">
               <a href="#">1</a>
             </li>
-            <li>
+            <li class="pagination-item">
               <a href="#">2</a>
             </li>
-            <li>
+            <li class="pagination-item">
               <a href="#">3</a>
             </li>
-            <li>
+            <li class="pagination-item">
               <a class="next" href="#">Следующая</a>
             </li>
           </ul>
@@ -259,10 +262,10 @@
         <li class="social-button">
           <a href="https://vkontakte.ru">Вконтакте</a>
         </li>
-        <li class="so">
+        <li class="social-button">
           <a href="https://facebook.com">Фейсбук</a>
         </li>
-        <li>
+        <li class="social-button">
           <a href="https://instagram.com">Инстаграм</a>
         </li>
       </ul>
