@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 /* === HEADER STARTS === */
 
 .inner-page .main-header-logo:hover {
@@ -45,8 +49,8 @@ a {
   color: #fb565a;
 }
 
-.main-nav-item a:active,
-.user-navigation a:active {
+.main-nav-item a:focus,
+.user-navigation a:focus {
   color: #000000;
   opacity: 0.3;
 }
@@ -235,18 +239,17 @@ a {
   line-height: 22px;
   color: #283136;
 }
- .filter-option span {
+.filter-option span {
    font-size: 16px;
    line-height: 20px;
    color: #283136;
  }
 
- .filter-option {
+.filter-option {
    list-style: none;
  }
 
-
- .filter button {
+.filter button {
    font-size: 16px;
    line-height: 18px;
    font: inherit;
@@ -357,7 +360,10 @@ a {
   color: rgba(0,0,0, 0.3)
 }
 
-.pagination-item-current a {
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
