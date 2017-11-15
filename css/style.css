@@ -87,9 +87,9 @@ a {
   background-color: #fb565a;
   border: none;
 }
-.slider-first .button:focus,
-.slider-second .button:focus,
-.slider-third .button:focus {
+.slider-first .button:hover,
+.slider-second .button:hover,
+.slider-third .button:hover {
   background-color: #e74246;
 }
 .slider-first .button:active,
@@ -134,13 +134,13 @@ a {
 .service-item:nth-child(3) .button {
   background-color: #efc84a;
 }
-.service-item:nth-child(1) .button:focus {
+.service-item:nth-child(1) .button:hover {
   background-color: #e74246;
 }
-.service-item:nth-child(2) .button:focus {
+.service-item:nth-child(2) .button:hover {
   background-color: #00bc6c;
 }
-.service-item:nth-child(3) .button:focus {
+.service-item:nth-child(3) .button:hover {
   background-color: #eab534;
 }
 
@@ -217,6 +217,15 @@ a {
   text-transform: uppercase;
   background-color: #fb565a;
   border: none;
+}
+
+.contacts .button:hover {
+  background-color: #e74246;
+}
+
+.contacts .button:active {
+  background-color: #d7373b;
+  color: rgba(255,255,255,0.3);
 }
 
 .main-header h1 {
@@ -425,6 +434,15 @@ a {
   text-transform: uppercase;
   background-color: #fb565a;
   border: none;
+}
+
+.modal-post:hover {
+  background-color: #e74246;
+}
+
+.modal-post:active {
+  background-color: #d7373b;
+  color: rgba(255,255,255,0.3);
 }
 
 .name-form input[type="text"],
