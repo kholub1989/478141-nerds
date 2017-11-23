@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -51,6 +52,13 @@ img {
   height: 65px;
   padding-bottom: 12px;
 }
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.8;
+}
+.main-header-logo:active {
+  opacity: 0.3;
+}
 
 .main-nav-item {
   display: flex;
@@ -80,7 +88,8 @@ img {
   margin: 0 auto;
 }
 
-.main-nav-item a, .user-navigation a {
+.main-nav-item a,
+.user-navigation a {
   color: #000000;
   text-transform: uppercase;
   display: block;
@@ -105,11 +114,13 @@ img {
   background-position: 0 0;
 }
 
-.main-nav-item a:hover, .user-navigation a:hover {
+.main-nav-item a:hover,
+.user-navigation a:hover {
   color: #fb565a;
 }
 
-.main-nav-item a:focus, .user-navigation a:focus {
+.main-nav-item a:focus,
+.user-navigation a:focus {
   color: #000000;
   opacity: 0.3;
 }
@@ -123,63 +134,158 @@ img {
 /* === CONTENT STARTS === */
 
 .slider {
-  margin: 0;
-  padding: 0;
-  min-height: 430px;
-  background-color: #eeeeee;
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  height: 430px;
+  overflow: hidden;
+}
+#check1:checked ~ .slider-controls .slider-control:nth-of-type(1)::after,
+#check2:checked ~ .slider-controls .slider-control:nth-of-type(2)::after,
+#check3:checked ~ .slider-controls .slider-control:nth-of-type(3)::after {
+  opacity: 0.5;
+}
+#check1:checked ~ .slider-slide-first,
+#check2:checked ~ .slider-slide-second,
+#check3:checked ~ .slider-slide-third {
+  z-index: 1;
+  opacity: 1;
+}
+.slider-slide {
+  position: absolute;
+  z-index: 0;
+  width: 1160px;
+  height: 430px;
+  padding-top: 80px;
+  opacity: 0;
+}
+.slider-slide-first {
+  background: url("../img/slide1.png") no-repeat 430px bottom;
+}
+.slider-slide-second {
+  background: url("../img/slide2.png") no-repeat right bottom;
+}
+.slider-slide-third {
+  background: url("../img/slide3.png") no-repeat right bottom;
 }
 
 .slider-title {
+  width: 520px;
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 55px;
+  font-weight: 500;
   line-height: 55px;
 }
-
-.slider-text {
+.slider-description {
+  width: 420px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
   color: #283136;
 }
-
-.slider-first .button, .slider-second .button, .slider-third .button {
-  font-size: 16px;
-  line-height: 18px;
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
+.slider-controls {
+  position: absolute;
+  bottom: 96px;
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+  height: 18px;
+  margin-left: -45px;
+}
+.slider-control {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  text-indent: 100%;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.slider-control::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  width: 6px;
+  height: 6px;
+  margin-top: -5px;
+  margin-left: -5px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  opacity: 0;
+}
+.button {
   background-color: #fb565a;
+  display: block;
+  width: 240px;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
   border: none;
+  border-radius: 3px;
 }
 
-.slider-first .button:hover, .slider-second .button:hover, .slider-third .button:hover {
+.button:hover,
+.button:focus {
   background-color: #e74246;
 }
-
-.slider-first .button:active, .slider-second .button:active, .slider-third .button:active {
-  background-color: #d7373b;
+.button:active {
   color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
+.services {
+  max-width: 1100px;
+  margin-top: 80px;
 }
 
 .services-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.service-item {
+  min-height: 348px;
+  width: 300px;
+
+}
 .services-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
 }
 
-.services-title p {
+.services-list p {
   color: #283136;
 }
 
 .service-item .button {
+  display: block;
+  width: 240px;
+  padding: 16px 0;
   font-size: 16px;
+  font-weight: 500;
   line-height: 18px;
-  font: inherit;
-  text-align: center;
   color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
   border: none;
+  border-radius: 3px;
 }
 
 .service-item:nth-child(1) .button {
