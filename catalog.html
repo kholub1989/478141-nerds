@@ -40,7 +40,8 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container wrapper">
+    <div class="catalog-columns">
     <section class="filter">
       <p class="visually-hidden">Фильтры стоимости и услуг</p>
       <form class="filter" action="https://echo.htmlacademy.ru" method="post">
@@ -129,12 +130,14 @@
       </form>
     </section>
 
+
     <section class="catalog">
+      <div class="sort">
       <h2 class="visually-hidden">Фильтры</h2>
       <h3>Сортировать:</h3>
       <ul class="catalog-option">
         <li>
-          <a class="catalog-option-price" href="#">По цене</a>
+          <a class="catalog-option-price catalog-option-current" href="#">По цене</a>
         </li>
         <li>
           <a class="catalog-option-type" href="#">По типу</a>
@@ -143,10 +146,15 @@
           <a class="catalog-option-functional" href="#">По функционалу</a>
         </li>
       </ul>
+
       <div class="catalog-arrow-down-up">
         <a href="#" class="catalog-arrow-down">down</a>
         <a href="#" class="catalog-arrow-up">up</a>
       </div>
+
+      </div>
+
+
 
       <div class="items">
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
@@ -223,7 +231,7 @@
         </div>
 
         <div class="pagination">
-          <ul>
+          <ul class="pagination-list">
             <li class="pagination-item pagination-item-current">
               <a href="#">1</a>
             </li>
@@ -233,13 +241,14 @@
             <li class="pagination-item">
               <a href="#">3</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item  pagination-item-next">
               <a class="next" href="#">Следующая</a>
             </li>
           </ul>
         </div>
       </div>
     </section>
+  </div>
 </main>
 
 <footer class="page-footer">
@@ -277,7 +286,7 @@
   </div>
 </footer>
 
-<sction class="modal wrapper">
+<div class="modal wrapper">
   <a class="modal-close" href="index.html"></a>
   <h2 class="modal-title">Напишите нам</h2>
   <form class="feedback" method="post" action="#">
@@ -295,7 +304,7 @@
   </label>
     <button class="button" type="submit">Отправить</button>
   </form>
-  </section>
+</div>
 
 </body>
 
