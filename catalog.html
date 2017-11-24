@@ -12,7 +12,8 @@
 <body class="inner-page">
 
   <header class="main-header">
-    <nav class="main-navigation">
+    <div class="container">
+    <nav class="main-navigation wrapper">
       <a class="main-header-logo" href="index.html">
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс"></a>
       <ul class="main-nav-item">
@@ -36,6 +37,7 @@
       </ul>
     </nav>
     <h1>Магазин готовых шаблонов</h1>
+    </div>
   </header>
 
   <main class="container">
@@ -238,62 +240,61 @@
         </div>
       </div>
     </section>
+</main>
 
-    <section class="map">
+<footer class="page-footer">
+  <section class="map">
+    <div class="map-inner">
       <h2 class="visually-hidden">Как нас найти?</h2>
       <div class="contacts">
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>
-          191186, Санкт-Петербург,
-          <br> ул. Б. Конюшенная, д. 19/8
-          <br>тел. +7 (812) 275-75-75</p>
+        <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
+        <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
         <a class="button" href="https://nerds.ru">Напишите нам</a>
       </div>
       <div class="footer-map">
-        <img class="footer-map-img" src="img/footer-map.jpg" width="1199" height="416" alt="Наше место нахождения">
         <img class="footer-map-marker" src="img/map-marker.png" width="231" height="190" alt="Нёрдс">
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="main-social">
-      <ul>
-        <li class="social-button">
-          <a href="https://vkontakte.ru">Вконтакте</a>
-        </li>
-        <li class="social-button">
-          <a href="https://facebook.com">Фейсбук</a>
-        </li>
-        <li class="social-button">
-          <a href="https://instagram.com">Инстаграм</a>
-        </li>
-      </ul>
-      <div class="social-text">
-        <h2>Давайте дуржить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
     </div>
-  </footer>
+  </section>
 
-  <section class="modal modal-write-us">
-    <h2>Напишите нам</h2>
-    <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="user-name">
-        <label for="modal-name">Ваше имя</label>
-        <input class="name-of-user" type="text" id="modal-name" name="name" placeholder="Представьтесь, пожалуйста" required>
-      </p>
-      <p class="user-email">
-        <label for="modal-email">Ваш e-mail</label>
-        <input class="email-of-user" type="email" id="modal-email" name="email" placeholder="Для отправки ответа" required>
-      </p>
-      <p class="user-text-massege">
-        <label for="modal-letter">Текст письма:</label>
-        <textarea id="modal-letter" name="user-message" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="modal-post" type="submit">Отправить</button>
-    </form>
-    <button class="modal-close" type="button">Закрыть</button>
+  <div class="main-social wrapper">
+    <ul class="socials">
+      <li class="social-button social-button-vk ">
+        <a href="https://vkontakte.ru">Вконтакте</a>
+      </li>
+      <li class="social-button social-button-fb">
+        <a href="https://facebook.com">Фейсбук</a>
+      </li>
+      <li class="social-button social-button-ig">
+        <a href="https://instagram.com">Инстаграм</a>
+      </li>
+    </ul>
+    <div class="social-text">
+      <h2>Давайте дуржить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </div>
+</footer>
+
+<sction class="modal wrapper">
+  <a class="modal-close" href="index.html"></a>
+  <h2 class="modal-title">Напишите нам</h2>
+  <form class="feedback" method="post" action="#">
+    <label class="feedback-label  feedback-label-name">
+    Ваше имя:<br>
+    <input class="feedback-input" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required>
+  </label>
+    <label class="feedback-label  feedback-label-email">
+    Ваш email:<br>
+    <input class="feedback-input" type="email" name="email" value="" placeholder="Для отправки ответа" required>
+  </label>
+    <label class="feedback-label">
+    Текст письма:<br>
+    <textarea class="feedback-text-field" name="text" placeholder="В свободной форме"></textarea>
+  </label>
+    <button class="button" type="submit">Отправить</button>
+  </form>
   </section>
 
 </body>
