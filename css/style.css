@@ -600,162 +600,156 @@ top: 50px;
 
 /* === INNER-PAGE STARTS === */
 
-.inner-page .main-header-logo:hover,
-.inner-page .main-header-logo:focus  {
-  opacity: 0.8;
-}
-
-.inner-page .main-header-logo:active {
-  opacity: 0.3;
-}
-
 .main-header h1 {
+  width: 1160px;
+  margin: 0 auto;
+  margin: 77px auto;
+  padding-bottom: 115px;
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
 }
 
-.filter fieldset {
-  border: none;
+.filter {
+  width: 260px;
 }
 
-.filter legend {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
+.catalog {
+  width: 760px;
 }
 
-.price-controls {
-  font-size: 16px;
-  line-height: 22px;
-  color: #283136;
-}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
 
-.filter-option span {
-  font-size: 16px;
-  line-height: 20px;
-  color: #283136;
-}
+  padding: 0;
+  margin: 0;
 
-.filter-option {
   list-style: none;
 }
 
-.filter button {
-  font-size: 16px;
-  line-height: 18px;
-  font: inherit;
-  text-align: center;
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.sort {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.sort h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  background-color: #eeeeee;
-  border: none;
-}
-
-.filter button:hover {
-  background-color: #dfdfdf;
-}
-
-.filter button:active {
-  background-color: #d5d5d5;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.catalog h3 {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
 }
 
 .catalog-option {
-  font-size: 14px;
-  line-height: 18px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 272px;
+  margin-left: auto;
   list-style: none;
 }
 
-.catalog-option a {
+.catalog-option-price,
+.catalog-option-type,
+.catalog-option-functional {
+  font-size: 14px;
+  line-height: 18px;
   color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
   opacity: 0.3;
 }
 
-.catalog-option a:hover {
-  color: #000000;
+.catalog-option a:hover,
+.catalog-option a:focus {
   opacity: 0.6;
 }
 
 .catalog-option a:active {
-  color: #000000;
   opacity: 1;
 }
 
-.catalog-arrow-down-up a {
-  color: #000000;
-  opacity: 0.3;
+.catalog-option-current:hover,
+.catalog-option-current:focus,
+.catalog-option-current:active {
+  opacity: 1;
 }
 
-.catalog-arrow-down-up a:hover {}
-
-.catalog-arrow-down-up a:active {}
-
-.item-description {
-  background-color: #eeeeee;
+.item-card {
+  width: 360px;
+  margin-bottom: 33px;
+  margin-right: 40px;
+  min-height: 616px;
 }
 
-.item-description .item-title {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
+.item-card:nth-child(odd) {
+  margin-right: 0;
 }
 
-.item-description .item-text {
-  font-size: 16px;
-  line-height: 18px;
-  color: #666666;
-}
 
-.item-description .button {
-  font-size: 16px;
-  line-height: 18px;
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #fb565a;
-  border: none;
-}
-
-.item-description .button:hover {
-  background-color: #e74246;
-}
-
-.item-description .button:active {
-  background-color: #d7373b;
-}
-
-.pagination ul {
+.pagination-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
   list-style: none;
 }
 
-.pagination a {
-  color: #000000;
+.pagination-item a {
   background-color: #eeeeee;
+  padding: 16px 21px;
+  margin-right: 11px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 
-.pagination a:hover {
+.pagination-item a:hover,
+.pagination-item a:focus {
   background-color: #dfdfdf;
 }
 
-.pagination a:focus {
+.pagination-item a:active {
+  color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
-  color: rgba(0, 0, 0, 0.3)
 }
 
-.pagination-item-current a, .pagination-item-current a:hover, .pagination-item-current a:focus, .pagination-item-current a:active {
-  color: #000000;
+.pagination-item-current a {
+  padding: 13px 18px;
   background-color: #ffffff;
-  border: 1px solid #dbdbdb;
-  border-radius: 2px;
+  border: 3px solid #dbdbdb;
 }
 
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
+  background: none;
+}
+
+.pagination-item-current a:active {
+  color: #000000;
+  background: none;
+  box-shadow: none;
+}
 
 
 /* === INNER-PAGE ENDS === */
