@@ -11,11 +11,12 @@
 
 <body>
   <header class="main-header">
+    <div class="container">
     <nav class="main-navigation wrapper">
       <a class="main-header-logo">
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс"></a>
       <ul class="main-nav-item">
-        <li class="main-nav-studio">
+        <li class="main-nav-studio main-nav-store-current">
           <a href="#">Студия</a>
         </li>
         <li class="main-nav-clients">
@@ -34,7 +35,10 @@
         </li>
       </ul>
     </nav>
+  </div>
+</header>
 
+    <main class="container">
     <section class="slider">
       <input class="visually-hidden" type="radio" name="radio" id="check1" checked>
       <input class="visually-hidden" type="radio" name="radio" id="check2">
@@ -70,12 +74,10 @@
          </label>
       </div>
     </section>
-  </header>
 
-  <main class="container">
-    <section class="services">
+    <section class="services wrapper">
       <h2 class="visually-hidden">Услуги</h2>
-      <ul class="services-list wrapper">
+      <ul class="services-list">
         <li class="service-item">
           <a class="services-image" href="#">
 						<img src="img/services-image-1.jpg" width="300" height="146" alt="Веб-сайты"></a>
@@ -100,7 +102,7 @@
       </ul>
     </section>
 
-    <article class="about-us">
+    <article class="about-us wrapper">
       <section class="about-us-column">
         <h2 class="visually-hidden">О нас</h2>
         <p class="about-us-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
@@ -134,7 +136,7 @@
       </section>
     </article>
 
-    <section class="portfolio">
+    <section class="portfolio wrapper">
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="portfolio-list">
         <li class="our-products-item">
@@ -146,8 +148,9 @@
 						<img class="our-products-image" src="img/logo-borodinski-2.png" width="199" height="68" alt="borodinski"></a>
         </li>
         <li class="our-products-item">
-          <a href="https://pink.ru"></a>
-          <img class="our-products-image" src="img/logo-pink-3.png" width="199" height="68" alt="pink"></li>
+          <a href="https://pink.ru">
+          <img class="our-products-image" src="img/logo-pink-3.png" width="199" height="68" alt="pink"></a>
+        </li>
         <li class="our-products-item">
           <a href="https://mishka.ru">
 						<img class="our-products-image" src="img/logo-mishka-4.png" width="199" height="68" alt="mishka"></a>
@@ -157,6 +160,7 @@
     </main>
 
   <footer class="page-footer">
+
     <section class="map">
       <div class="map-inner">
       <h2 class="visually-hidden">Как нас найти?</h2>
@@ -169,18 +173,19 @@
       <div class="footer-map">
         <img class="footer-map-marker" src="img/map-marker.png" width="231" height="190" alt="Нёрдс">
       </div>
+
     </div>
     </section>
 
-    <div class="main-social">
-      <ul>
-        <li class="social-button">
+    <div class="main-social wrapper">
+      <ul class="socials">
+        <li class="social-button social-button-vk ">
           <a href="https://vkontakte.ru">Вконтакте</a>
         </li>
-        <li class="social-button">
+        <li class="social-button social-button-fb">
           <a href="https://facebook.com">Фейсбук</a>
         </li>
-        <li class="social-button">
+        <li class="social-button social-button-ig">
           <a href="https://instagram.com">Инстаграм</a>
         </li>
       </ul>
