@@ -12,33 +12,33 @@
 <body>
   <header class="main-header">
     <div class="container">
-    <nav class="main-navigation wrapper">
-      <a class="main-header-logo">
+      <nav class="main-navigation wrapper">
+        <a class="main-header-logo">
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс"></a>
-      <ul class="main-nav-item">
-        <li class="main-nav-studio main-nav-store-current">
-          <a href="#">Студия</a>
-        </li>
-        <li class="main-nav-clients">
-          <a href="#">Клиенты</a>
-        </li>
-        <li class="main-nav-store">
-          <a href="catalog.html">Магазин</a>
-        </li>
-        <li class="main-nav-contacts">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul class="user-navigation">
-        <li>
-          <a class="basket" href="basket.html">Корзина</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        <ul class="main-nav-item">
+          <li class="main-nav-studio main-nav-store-current">
+            <a href="#">Студия</a>
+          </li>
+          <li class="main-nav-clients">
+            <a href="#">Клиенты</a>
+          </li>
+          <li class="main-nav-store">
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li class="main-nav-contacts">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="user-navigation">
+          <li>
+            <a class="basket" href="basket.html">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main class="container">
+  <main class="container">
     <section class="slider">
       <input class="visually-hidden" type="radio" name="radio" id="check1" checked>
       <input class="visually-hidden" type="radio" name="radio" id="check2">
@@ -157,24 +157,22 @@
         </li>
       </ul>
     </section>
-    </main>
+  </main>
 
   <footer class="page-footer">
-
     <section class="map">
       <div class="map-inner">
-      <h2 class="visually-hidden">Как нас найти?</h2>
-      <div class="contacts">
-        <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
-        <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
-        <a class="button" href="https://nerds.ru">Напишите нам</a>
+        <h2 class="visually-hidden">Как нас найти?</h2>
+        <div class="contacts">
+          <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
+          <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
+          <a class="button" href="https://nerds.ru">Напишите нам</a>
+        </div>
+        <div class="footer-map">
+          <img class="footer-map-marker" src="img/map-marker.png" width="231" height="190" alt="Нёрдс">
+        </div>
       </div>
-      <div class="footer-map">
-        <img class="footer-map-marker" src="img/map-marker.png" width="231" height="190" alt="Нёрдс">
-      </div>
-
-    </div>
     </section>
 
     <div class="main-social wrapper">
@@ -196,25 +194,25 @@
     </div>
   </footer>
 
-  <section class="modal modal-write-us">
-    <h2>Напишите нам</h2>
-    <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="user-name">
-        <label for="modal-name">Ваше имя</label>
-        <input class="name-of-user" type="text" id="modal-name" name="name" placeholder="Представьтесь, пожалуйста" required>
-      </p>
-      <p class="user-email">
-        <label for="modal-email">Ваш e-mail</label>
-        <input class="email-of-user" type="email" id="modal-email" name="email" placeholder="Для отправки ответа" required>
-      </p>
-      <p class="user-text-massege">
-        <label for="modal-letter">Текст письма:</label>
-        <textarea id="modal-letter" type="text" name="user-message" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="modal-post" type="submit">Отправить</button>
+  <sction class="modal wrapper">
+    <a class="modal-close" href="index.html"></a>
+    <h2 class="modal-title">Напишите нам</h2>
+    <form class="feedback" method="post" action="#">
+      <label class="feedback-label  feedback-label-name">
+      Ваше имя:<br>
+      <input class="feedback-input" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required>
+    </label>
+      <label class="feedback-label  feedback-label-email">
+      Ваш email:<br>
+      <input class="feedback-input" type="email" name="email" value="" placeholder="Для отправки ответа" required>
+    </label>
+      <label class="feedback-label">
+      Текст письма:<br>
+      <textarea class="feedback-text-field" name="text" placeholder="В свободной форме"></textarea>
+    </label>
+      <button class="button" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
-  </section>
+    </section>
 
 </body>
 
