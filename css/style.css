@@ -43,15 +43,16 @@ input[type="radio"].visually-hidden {
 /* === HEADER STARTS === */
 
 .main-header {
-  min-height: 115px;
+  min-height: 100px;
   background-color: #eeeeee;
 }
 
 .main-navigation {
-  height: 126px;
+  min-height: 100px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  flex-wrap: wrap;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -65,7 +66,8 @@ input[type="radio"].visually-hidden {
   padding-bottom: 12px;
 }
 
-.main-header-logo:hover, .main-header-logo:focus {
+.main-header-logo:hover,
+.main-header-logo:focus {
   opacity: 0.8;
 }
 
@@ -138,7 +140,8 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
   padding-left: 60px;
-  min-height: 500px;
+  min-width: 1160px;
+  min-height: 430px;
   overflow: hidden;
   background-color: #eeeeee;
 }
@@ -285,6 +288,7 @@ input[type="radio"].visually-hidden {
 .service-item {
   min-height: 348px;
   width: 300px;
+
 }
 
 .services-title {
@@ -299,7 +303,7 @@ input[type="radio"].visually-hidden {
 
 .service-item .button {
   display: block;
-  width: 240px;
+  width: 160px;
   padding: 16px 0;
   font-size: 16px;
   font-weight: 500;
@@ -445,18 +449,30 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 182px;
+  min-height: 183px;
   padding-top: 10px;
-  padding-left: 0;
-  margin-bottom: 24px;
+  padding-right: 40px;
+  padding-left: 30px;
+  margin-bottom: 80px;
   list-style: none;
   border-bottom: 2px solid #eeeeee;
 }
 
 .our-products-item {
-  width: 230px;
-  height: 65px;
+  position: relative;
+  width: 300px;
   text-align: center;
+}
+
+.our-products-item:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2px;
+  height: 52px;
+  margin-top: -26px;
+  background: #eeeeee;
 }
 
 .portfolio img {
@@ -478,7 +494,6 @@ input[type="radio"].visually-hidden {
 .map {
   width: 100%;
   min-height: 416px;
-  padding-top: 80px;
   background: url("../img/footer-map.jpg") no-repeat 50%;
 }
 
@@ -499,22 +514,24 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   width: 319px;
   min-height: 308px;
+
   padding-top: 32px;
   padding-right: 50px;
   padding-bottom: 47px;
   padding-left: 50px;
+
   color: #000000;
   background-color: #ffffff;
 }
 
 .footer-map {
   position: absolute;
-  right: 240px;
-  top: 50px;
+  right: 250px;
+  top: 90px;
 }
 
 .contacts-title {
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -522,20 +539,19 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-address {
+  margin-bottom: 0;
   font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-  margin-bottom: 18px;
   line-height: 18px;
+  margin-bottom: 15px;
   color: #666666;
 }
 
 .contacts-phone {
   font-size: 16px;
-  line-height: 24px;
-  color: #283136;
   line-height: 18px;
   color: #666666;
+  margin-bottom: 25px;
+
 }
 
 .contacts .button {
@@ -547,7 +563,7 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   justify-content: space-between;
   min-height: 217px;
-  padding-top: 70px;
+  padding-top: 69px;
 }
 
 .social-text {
@@ -575,12 +591,15 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 260px;
   height: 80px;
+  padding: 0;
+  margin-top: 10px;
 }
 
 .social-button {
   position: relative;
   width: 80px;
   height: 80px;
+
   overflow: hidden;
   text-indent: 100%;
   background-color: #e1e1e1;
@@ -623,7 +642,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/insta-icon.svg");
 }
 
-.social-button:hover, .social-button:focus {
+.social-button:hover,
+.social-button:focus {
   background-color: #e74246;
 }
 
@@ -1138,9 +1158,9 @@ input[type="radio"]:focus:checked+label::before {
 }
 
 .modal-container {
-  margin: 50px;
-  padding: 20px;
-  min-width: 200px;
+  margin: 0;
+  padding: 0;
+  min-width: 220px;
   text-align: left;
   white-space: normal;
   background-color: #fff;
@@ -1149,7 +1169,7 @@ input[type="radio"]:focus:checked+label::before {
 
 .modal-close {
   position: absolute;
-  right: 210px;
+  right: 250px;
   width: 24px;
   min-height: 24px;
   background-image: url("../img/close-cross.svg");
@@ -1167,6 +1187,7 @@ input[type="radio"]:focus:checked+label::before {
 
 .modal-title {
   width: 100%;
+  margin-top: 0;
   margin-bottom: 40px;
   font-size: 45px;
   line-height: 45px;
@@ -1202,7 +1223,8 @@ input[type="radio"]:focus:checked+label::before {
   line-height: 18px;
 }
 
-.feedback-label-name, .feedback-label-email {
+.feedback-label-name,
+.feedback-label-email {
   width: 360px;
   height: 77px;
 }
