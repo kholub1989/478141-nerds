@@ -420,7 +420,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-column-logo .about-us-subtitle {
-  margin-bottom: 40px;
+  margin: 14px 3px 40px 0;
   text-align: center;
 }
 
@@ -433,7 +433,7 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  margin: 39px 0 34px 0;
+  margin: 38px 0 33px 0;
 }
 
 .about-us-description {
@@ -442,10 +442,11 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   color: #283136;
   margin-bottom: 39px;
+  margin-top: 12px;
 }
 
 .about-us-subtitle {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -461,7 +462,7 @@ input[type="radio"].visually-hidden {
 
 .about-us-item {
   position: relative;
-  padding-left: 37px;
+  padding-left: 36px;
   margin-bottom: 24px;
   color: #283136;
 }
@@ -485,7 +486,7 @@ input[type="radio"].visually-hidden {
 .about-us-num {
   display: inline-block;
   width: 105px;
-  margin-right: 10px;
+  margin: 2px 10px 0 0;
   font-size: 45px;
   font-weight: 700;
   line-height: 50px;
@@ -493,7 +494,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-num sup {
-  font-size: 29px;
+  font-size: 28px;
 }
 
 .portfolio-list {
