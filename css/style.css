@@ -7,12 +7,7 @@ body {
   line-height: 24px;
   font-weight: 500;
 }
-/*
- * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-*/
+
 a {
   text-decoration: none;
 }
@@ -95,8 +90,8 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-width: 440px;
-  margin-bottom: 20px;
-  margin-left: 200px;
+  margin-bottom: 7px;
+  margin-left: 161px;
   list-style: none;
 }
 
@@ -106,7 +101,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   max-width: 180px;
   list-style: none;
-  margin-bottom: 5px;
+  margin-bottom: -7px;
   margin-left: auto;
   margin-top: 20px;
 }
@@ -122,7 +117,7 @@ input[type="radio"].visually-hidden {
 .user-navigation .basket {
   position: relative;
   margin-bottom: 16px;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .user-navigation .basket::before {
@@ -184,7 +179,6 @@ input[type="radio"].visually-hidden {
   z-index: 0;
   width: 1160px;
   height: 430px;
-  padding-top: 80px;
   opacity: 0;
 }
 
@@ -202,9 +196,10 @@ input[type="radio"].visually-hidden {
 
 .slider-title {
   width: 520px;
+  margin-top: 78px;
   margin-bottom: 25px;
   font-size: 55px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 55px;
 }
 
@@ -305,7 +300,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 510px;
+  min-height: 428px;
   padding-top: 80px;
   color: #000000;
   background-color: #ffffff;
@@ -321,7 +316,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 0 60px 0 0;
   list-style: none;
 }
 
@@ -335,10 +330,15 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
+  margin: 21px 0 0 0;
 }
 
 .services-list p {
+  font-size: 16px;
+  line-height: 24px;
   color: #283136;
+  margin: 14px 0 32px 0;
 }
 
 .service-item .button {
@@ -404,7 +404,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 525px;
+  min-height: 490px;
   padding-top: 35px;
   color: #000000;
   background-color: #ffffff;
@@ -431,8 +431,9 @@ input[type="radio"].visually-hidden {
 .about-us-title {
   margin-bottom: 35px;
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 45px;
+  margin: 39px 0 34px 0;
 }
 
 .about-us-description {
@@ -491,6 +492,10 @@ input[type="radio"].visually-hidden {
   vertical-align: top;
 }
 
+.about-us-num sup {
+  font-size: 29px;
+}
+
 .portfolio-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,11 +506,10 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 183px;
-  padding-top: 10px;
-  padding-right: 40px;
-  padding-left: 30px;
+  min-height: 164px;
+  margin-left: -60px;
   margin-bottom: 80px;
+  margin-right: -20px;
   list-style: none;
   border-bottom: 2px solid #eeeeee;
 }
@@ -523,7 +527,7 @@ input[type="radio"].visually-hidden {
   right: 0;
   width: 2px;
   height: 52px;
-  margin-top: -26px;
+  margin-top: -35px;
   background: #eeeeee;
 }
 
@@ -596,7 +600,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-title {
-  margin-bottom: 15px;
+  margin-bottom: 4px;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -604,10 +608,9 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-address {
-  margin-bottom: 0;
   font-size: 16px;
   line-height: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
   color: #666666;
 }
 
@@ -615,7 +618,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
-  margin-bottom: 25px;
+  margin-bottom: 37px;
 
 }
 
@@ -643,8 +646,7 @@ input[type="radio"].visually-hidden {
 
 .social-text h2 {
   margin: 0;
-  margin-top: 7px;
-  margin-bottom: 10px;
+  margin-top: 8px;
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
@@ -654,13 +656,14 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+  margin-top: 8px;
 }
 
 .main-social ul{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 280px;
+  width: 260px;
   list-style: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1170,19 +1173,27 @@ input[type="radio"]:disabled:checked+label::before {
 }
 
 .item-description {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  height: 100%;
-  background-color: #eeeeee;
-  -webkit-transition: top 0.2s;
-  -o-transition: top 0.2s;
-  transition: top 0.2s;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: auto;
+min-height: 220px;
+padding-top: 30px;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+background-color: #eeeeee;
+-webkit-transition: all 0.2s;
+-o-transition: all 0.2s;
+transition: all 0.2s;
+opacity: 0;
+visibility: hidden;
 }
 
-.item-card:hover .item-description {
-  top: 65%;
+.item-card:hover .item-description,
+.item-card:focus .item-description {
+opacity: 1;
+visibility: visible;
 }
 
 .item-card:hover {
