@@ -6,10 +6,11 @@
 
   var user_name = popup.querySelector("[name=name]");
   var email = popup.querySelector("[name=email]");
-/*
+
   var message = popup.querySelector("[name=message]");
-*/
+
   var storage = localStorage.getItem("user_name");
+  var storage2 = localStorage.getItem("email");
 
   link.addEventListener("click", function(evt) {
     evt.preventDefault();
@@ -18,6 +19,12 @@
     if (storage) {
       user_name.value = storage;
       email.focus();
+    } else {
+      user_name.focus();
+    }
+    if (storage2) {
+      email.value = storage2;
+      message.focus();
     } else {
       user_name.focus();
     }
@@ -31,6 +38,7 @@
       popup.classList.add("modal-error");
     } else {
       localStorage.setItem("user_name", user_name.value);
+      localStorage.setItem("email", email.value);
     }
   });
 
