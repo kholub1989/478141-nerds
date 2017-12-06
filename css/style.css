@@ -386,6 +386,7 @@ img {
 .service-item {
   min-height: 348px;
   width: 300px;
+  padding-bottom: 20px;
 }
 
 .services-title {
