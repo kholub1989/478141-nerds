@@ -988,19 +988,19 @@ img {
   background: url("../img/radio-on.svg") no-repeat;
 }
 
-.filter input[type="checkbox"]+label::before, input[type="checkbox"]:checked+label::before, input[type="radio"]+label::before, input[type="radio"]:checked+label::before {
+.filter input[type="checkbox"]+label::before, .filter input[type="checkbox"]:checked+label::before, .filter input[type="radio"]+label::before, .filter input[type="radio"]:checked+label::before {
   opacity: 0.4;
 }
 
-.filter input[type="checkbox"]:hover+label::before, input[type="checkbox"]:hover:checked+label::before, input[type="radio"]:hover+label::before, input[type="radio"]:hover:checked+label::before {
+.filter input[type="checkbox"]:hover+label::before, .filter input[type="checkbox"]:hover:checked+label::before, .filter input[type="radio"]:hover+label::before, .filter input[type="radio"]:hover:checked+label::before {
   opacity: 1;
 }
 
-.filter input[type="checkbox"]:focus+label::before, input[type="checkbox"]:focus:checked+label::before, input[type="radio"]:focus+label::before, input[type="radio"]:focus:checked+label::before {
+.filter input[type="checkbox"]:focus+label::before, .filter input[type="checkbox"]:focus:checked+label::before, .filter input[type="radio"]:focus+label::before, .filter input[type="radio"]:focus:checked+label::before {
   opacity: 1;
 }
 
-.filter input[type="checkbox"]:disabled+label::before, input[type="checkbox"]:disabled:checked+label::before, input[type="radio"]:disabled+label::before, input[type="radio"]:disabled:checked+label::before {
+.filter input[type="checkbox"]:disabled+label::before, .filter input[type="checkbox"]:disabled:checked+label::before, .filter input[type="radio"]:disabled+label::before, .filter input[type="radio"]:disabled:checked+label::before {
   opacity: 0.3;
 }
 
